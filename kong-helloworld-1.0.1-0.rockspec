@@ -16,13 +16,8 @@ build = {
     type = "builtin",
     modules = {
 
-["kong.plugins.ip_restriction.handler"] = "kong/plugins/ip-restriction/handler.lua",
-
-    ["kong.plugins.ip_restriction.init_worker"] = "kong/plugins/ip-restriction/init_worker.lua",
-
-    ["kong.plugins.ip_restriction.access"] = "kong/plugins/ip-restriction/access.lua",
-
-    ["kong.plugins.ip_restriction.schema"] = "kong/plugins/ip-restriction/schema.lua",
+["kong.plugins.ip-restriction.handler"] = "kong/plugins/ip-restriction/handler.lua",
+    ["kong.plugins.ip-restriction.schema"] = "kong/plugins/ip-restriction/schema.lua",
 
 
 
