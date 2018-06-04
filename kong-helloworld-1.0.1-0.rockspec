@@ -22,22 +22,18 @@ build = {
 
 
 
-    ["kong.plugins.helloworld.handler"] = "kong/plugins/helloworld/handler.lua",
+    ["kong.plugins.helloworld.handler"] = "handler.lua",
 
 
-    ["kong.plugins.helloworld.schema"] = "kong/plugins/helloworld/schema.lua",
-    ["kong.plugins.helloworld.daos"] = "kong/plugins/helloworld/daos.lua",
-["kong.plugins.helloworld.policies.init"] = "kong/plugins/helloworld/policies/init.lua",
-["kong.plugins.helloworld.policies.cluster"] = "kong/plugins/helloworld/policies/cluster.lua",
-["kong.plugins.helloworld.migrations.postgres"] = "kong/plugins/helloworld/migrations/postgres.lua",
-["kong.plugins.helloworld.migrations.cassandra"] = "kong/plugins/helloworld/migrations/cassandra.lua",
+    ["kong.plugins.helloworld.schema"] = "schema.lua",
+    ["kong.plugins.helloworld.daos"] = "daos.lua",
+["kong.plugins.helloworld.policies.init"] = "policies/init.lua",
+["kong.plugins.helloworld.policies.cluster"] = "policies/cluster.lua",
+["kong.plugins.helloworld.migrations.postgres"] = "migrations/postgres.lua",
+["kong.plugins.helloworld.migrations.cassandra"] = "migrations/cassandra.lua",
 
-
-    ["kong.api.app"] = "kong/api/app.lua",
 
     ["kong.api.crud_helpers"] = "kong/api/crud_helpers.lua",
-
-    ["kong.api.route_helpers"] = "kong/api/route_helpers.lua",
 
 
     }
