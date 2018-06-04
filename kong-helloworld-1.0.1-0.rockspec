@@ -1,5 +1,9 @@
 package = "kong-helloworld"
 version = "1.0.1-0"
+
+source = {
+   url = "git://github.com/ValerioDeBlasio/helloworld_plugin_kong" -- We don't have one yet
+}
 description = {
     summary = "Consumer Rate Limiting is a Kong plugin, which allows to define request limiting rules",
     detailed = [[
@@ -12,13 +16,13 @@ build = {
     type = "builtin",
     modules = {
 
-["kong.plugins.ip_restriction.handler"] = "kong/plugins/ip_restriction/handler.lua",
+["kong.plugins.ip_restriction.handler"] = "kong/plugins/ip-restriction/handler.lua",
 
-    ["kong.plugins.ip_restriction.init_worker"] = "kong/plugins/ip_restriction/init_worker.lua",
+    ["kong.plugins.ip_restriction.init_worker"] = "kong/plugins/ip-restriction/init_worker.lua",
 
-    ["kong.plugins.ip_restriction.access"] = "kong/plugins/ip_restriction/access.lua",
+    ["kong.plugins.ip_restriction.access"] = "kong/plugins/ip-restriction/access.lua",
 
-    ["kong.plugins.ip_restriction.schema"] = "kong/plugins/ip_restriction/schema.lua",
+    ["kong.plugins.ip_restriction.schema"] = "kong/plugins/ip-restriction/schema.lua",
 
 
 
