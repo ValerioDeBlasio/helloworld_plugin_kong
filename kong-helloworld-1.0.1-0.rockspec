@@ -16,9 +16,6 @@ build = {
     type = "builtin",
     modules = {
 
-["kong.plugins.ip-restriction.handler"] = "kong/plugins/ip-restriction/handler.lua",
-    ["kong.plugins.ip-restriction.schema"] = "kong/plugins/ip-restriction/schema.lua",
-
 
 
     ["kong.plugins.helloworld.handler"] = "handler.lua",
@@ -32,7 +29,6 @@ build = {
 ["kong.plugins.helloworld.migrations.cassandra"] = "migrations/cassandra.lua",
 
 
-    ["kong.api.crud_helpers"] = "kong/api/crud_helpers.lua",
 
 
     }
